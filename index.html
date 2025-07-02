@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja - Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="#">Kopi Senja</a></h1>
+            <nav class="nav-links">
+                <a href="#hero">Beranda</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#products">Produk</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Nikmati Setiap Tegukan</h2>
+            <p>Rasakan kehangatan dan aroma kopi pilihan terbaik kami.</p>
+            <a href="#menu" class="btn">Lihat Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-us container section-padding">
+        <h2>Tentang Kami</h2>
+        <div class="about-content">
+            <p>Selamat datang di Kopi Senja, tempat di mana setiap cangkir menceritakan kisah. Kami berkomitmen untuk menyajikan kopi berkualitas tinggi, dipilih dari biji-biji terbaik di seluruh dunia, dipanggang dengan sempurna, dan diseduh dengan sepenuh hati.</p>
+            <p>Didirikan pada tahun 2023, Kopi Senja lahir dari kecintaan mendalam terhadap seni kopi dan keinginan untuk menciptakan ruang yang nyaman bagi para pecinta kopi untuk berkumpul dan menikmati.</p>
+        </div>
+    </section>
+
+    <section id="products" class="products section-padding">
+        <div class="container">
+            <h2>Produk Unggulan</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/Expresso.jpeg" alt="Espresso">
+                    <h3>Espresso Klasik</h3>
+                    <p>Kopi pekat dengan crema sempurna.</p>
+                    <span class="price">Rp 25.000</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/Latte.jpeg" alt="Latte">
+                    <h3>Latte Art</h3>
+                    <p>Perpaduan sempurna espresso dan susu segar.</p>
+                    <span class="price">Rp 35.000</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/Cappuccino.jpeg" alt="Cappuccino">
+                    <h3>Cappuccino Lembut</h3>
+                    <p>Perpaduan espresso, susu steam, dan busa.</p>
+                    <span class="price">Rp 30.000</span>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu section-padding">
+        <div class="container">
+            <h2>Daftar Menu</h2>
+            <div class="menu-categories">
+                <button class="menu-btn active" data-category="all">Semua</button>
+                <button class="menu-btn" data-category="coffee">Kopi</button>
+                <button class="menu-btn" data-category="non-coffee">Non-Kopi</button>
+                <button class="menu-btn" data-category="snack">Camilan</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="coffee">
+                    <h3>Americano</h3>
+                    <p>Espresso dengan air panas.</p>
+                    <span class="price">Rp 28.000</span>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <h3>Mocha</h3>
+                    <p>Espresso, cokelat, dan susu.</p>
+                    <span class="price">Rp 40.000</span>
+                </div>
+                <div class="menu-item" data-category="non-coffee">
+                    <h3>Matcha Latte</h3>
+                    <p>Teh hijau bubuk premium dengan susu.</p>
+                    <span class="price">Rp 38.000</span>
+                </div>
+                <div class="menu-item" data-category="snack">
+                    <h3>Croissant</h3>
+                    <p>Roti Prancis renyah.</p>
+                    <span class="price">Rp 20.000</span>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>Kami senang mendengar dari Anda! Jangan ragu untuk menghubungi kami melalui formulir di bawah ini atau kunjungi kami di lokasi.</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Kopi Nikmat No. 123, Kota Kopi</p>
+                <p><i class="fas fa-phone"></i> (021) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@kopisenja.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kopi Senja. Semua Hak Cipta Dilindungi.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
